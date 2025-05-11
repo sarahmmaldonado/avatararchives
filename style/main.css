@@ -22,7 +22,6 @@ header {
 }
 
 /* BRAND BOX (LEFT SIDE) */
-/* BRAND BOX (LEFT SIDE) */
 .brand-box {
   background-color: #f5e2ba; /* Slightly darker cream */
   border-radius: 15px;
@@ -126,6 +125,7 @@ nav a:hover {
   justify-content: center; /* Vertically center the content */
   align-items: center; /* Center content horizontally */
   text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Shadow for the hero section */
 }
 
 .hero h2 {
