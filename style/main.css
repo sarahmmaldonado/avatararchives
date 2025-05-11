@@ -107,36 +107,44 @@ nav a:hover {
   background-color: #e6c49a; /* Light orange-brown background */
   padding: 50px 20px;
   text-align: center;
-  height: 100vh; /* Makes the hero section take up the full screen height */
+  height: 100vh; /* Full screen height */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
 }
 
+.hero h2 {
+  font-size: 3rem; /* Adjust size for the title */
+  margin-bottom: 20px;
+  color: #2e2e2e; /* Dark text for contrast */
+}
 
 .hero img {
-  width: 60%;
-  max-width: 500px;
-  border-radius: 15px; /* Rounded corners for the image */
-  margin-top: 20px;
+  width: 70%; /* Adjust image size */
+  max-width: 450px; /* Set a max width to prevent large images */
+  border-radius: 15px;
+  margin-bottom: 30px;
 }
 
 .hero .buttons {
-  margin-top: 20px;
+  display: flex;
+  gap: 15px;
 }
 
 .hero button {
-  background-color: #d6b07e;
+  background-color: #d6b07e; /* Light brown color for buttons */
   border: none;
+  color: white;
+  font-size: 1rem;
   padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  font-weight: bold;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .hero button:hover {
-  background-color: #b98f59;
+  transform: scale(1.1); /* Grow effect when hovered */
 }
+
