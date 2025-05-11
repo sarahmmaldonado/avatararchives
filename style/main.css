@@ -122,8 +122,8 @@ nav a:hover {
 }
 
 .hero img {
-  width: 60%; /* Adjusted image size */
-  max-width: 450px; /* Set a max width to prevent large images */
+  width: 80%; /* Make image wider */
+  max-width: 600px; /* Set a max width to ensure it doesn't get too large */
   border-radius: 15px; /* Rounded corners */
   margin-bottom: 30px;
 }
