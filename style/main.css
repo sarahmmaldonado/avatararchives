@@ -102,11 +102,11 @@ nav a {
 }
 
 .hero img {
-  width: 50%; /* Set to 50% for better sizing */
-  max-width: 400px; /* Max width for the image */
-  border-radius: 20px; /* Rounded corners */
-  display: inline-block;
-  margin: 0 auto;
+  width: 60%; /* Adjusted size */
+  max-width: 500px; /* Set a max width */
+  border-radius: 15px; /* Rounded corners */
+  margin: 0 auto; /* Centering the image */
+  display: block;
 }
 
 /* Buttons */
