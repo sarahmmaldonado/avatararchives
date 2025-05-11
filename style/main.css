@@ -222,7 +222,6 @@ nav a:hover {
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   gap: 30px;
   margin-top: 40px;
-  transition: all 0.3s ease;
   visibility: hidden; /* Hide initially */
 }
 
@@ -265,4 +264,10 @@ nav a:hover {
 
 .content-card a:hover {
   color: #2e2e2e;
+}
+
+/* Tab active state */
+.tabs .active {
+  background-color: #d6b07e;
+  color: #fff;
 }
