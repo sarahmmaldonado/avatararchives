@@ -2,19 +2,19 @@
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #fdf1dc;
+    background-color: #fdf1dc; /* Light creamy background */
     color: #2e2e2e;
     scroll-behavior: smooth;
   }
   
   /* HEADER STYLES */
   header {
-    background-color: #fdf1dc;
+    background-color: #fdf1dc; /* Cream */
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #d6b07e;
+    border-bottom: 2px solid #d6b07e; /* Light brown border */
     position: sticky;
     top: 0;
     z-index: 10;
@@ -22,39 +22,31 @@ body {
   
   /* BRAND BOX STYLES (LEFT SIDE) */
   .brand-box {
-    background-color: #f5e2ba;
+    background-color: #f5e2ba; /* Slightly darker cream */
     border-radius: 15px;
     padding: 10px 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   
   .brand-box a {
     text-decoration: none;
     color: #2e2e2e;
     font-weight: bold;
-    transition: text-shadow 0.3s ease;
-  }
-  
-  .brand-box a:hover {
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);  /* Glow effect */
   }
   
   /* NAVIGATION BAR (RIGHT SIDE) */
   nav {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 20px;
   }
   
   nav a {
     text-decoration: none;
     color: #2e2e2e;
     font-weight: bold;
-    font-size: 1rem;
-  }
-  
-  nav a:hover {
-    color: #d6b07e;  /* Change color on hover */
+    font-size: 0.95rem;
   }
   
   /* DROPDOWN MENU */
@@ -69,7 +61,7 @@ body {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fff5d7;  /* Pale yellow background */
+    background-color: #fff5d7; /* Pale yellow */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
     border-radius: 10px;
@@ -84,83 +76,14 @@ body {
     padding: 8px 16px;
     text-decoration: none;
     color: #2e2e2e;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
   .dropdown-content a:hover {
-    background-color: #f5e2ba;  /* Highlight on hover */
+    background-color: #f5e2ba;
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
-  }
-  
-  
-  /* SECTION STYLES */
-  section {
-    padding: 40px 20px;
-    margin: 20px 0;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-    color: #2e2e2e;
-    margin-bottom: 20px;
-  }
-  
-  .buttons button {
-    padding: 10px 20px;
-    background-color: #f5e2ba;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .buttons button:hover {
-    background-color: #d6b07e;  /* Darken the button on hover */
-  }
-  
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .content-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .content-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .content-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-  }
-  
-  .content-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .content-card p {
-    font-size: 1rem;
-    color: #555;
   }
   
