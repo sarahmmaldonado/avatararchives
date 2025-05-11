@@ -277,17 +277,21 @@ nav a:hover {
   color: #2e2e2e;
 }
 .name-link,
+.name-link:link,
 .name-link:visited,
+.name-link:hover,
 .name-link:active {
-  text-decoration: none;
+  all: unset; /* Remove all inherited link styles */
   color: #9e7d53; /* Light brown */
   font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .name-link:hover {
   transform: scale(1.1);
-  color: #7d5b3e; /* Darker brown on hover */
+  color: #7d5b3e;
 }
 
 
