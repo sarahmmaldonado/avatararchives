@@ -1,4 +1,7 @@
-a,
+a {
+  text-decoration: none;
+  color: inherit;
+}
 a:visited,
 a:hover,
 a:active {
@@ -285,20 +288,21 @@ nav a:hover {
   color: #2e2e2e;
 }
 .name-link {
-  color: #9e7d53 !important;
-  text-decoration: none !important;
+  color: #9e7d53;
+  text-decoration: none;
   font-weight: bold;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .name-link:visited {
-  color: #9e7d53 !important;
+  color: #9e7d53;
 }
 
 .name-link:hover {
   transform: scale(1.1);
-  color: #7d5b3e !important;
+  color: #7d5b3e;
 }
+
 
 
 
