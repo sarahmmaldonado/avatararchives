@@ -2,19 +2,19 @@
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #fdf1dc;  /* Light creamy background */
+    background-color: #fdf1dc;
     color: #2e2e2e;
     scroll-behavior: smooth;
   }
   
   /* HEADER STYLES */
   header {
-    background-color: #fdf1dc;  /* Creamy background for header */
+    background-color: #fdf1dc;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #d6b07e;  /* Light brown border */
+    border-bottom: 2px solid #d6b07e;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -22,17 +22,11 @@ body {
   
   /* BRAND BOX STYLES (LEFT SIDE) */
   .brand-box {
-    background-color: #f5e2ba;  /* Slightly darker cream */
+    background-color: #f5e2ba;
     border-radius: 15px;
     padding: 10px 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .brand-box:hover {
-    transform: scale(1.05);  /* Grow on hover */
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
   }
   
   .brand-box a {
@@ -49,8 +43,7 @@ body {
   /* NAVIGATION BAR (RIGHT SIDE) */
   nav {
     display: flex;
-    align-items: center;
-    gap: 30px;  /* Increased spacing between nav links */
+    gap: 30px;
   }
   
   nav a {
@@ -58,7 +51,6 @@ body {
     color: #2e2e2e;
     font-weight: bold;
     font-size: 1rem;
-    transition: color 0.3s ease;
   }
   
   nav a:hover {
