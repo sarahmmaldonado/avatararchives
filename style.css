@@ -1,67 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Legacy of The Avatar</title>
-  <link rel="stylesheet" href="style/main.css" />
-</head>
-<body>
-
-  <!-- Header Navigation -->
-  <header>
-    <h1>Legacy of The Avatar: Avatar The Last Airbender Archives - Sarah Maldonado</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#explore">Episodes</a>
-      <a href="#details">About</a>
-      <a href="#author">More about the Author</a>
-    </nav>
-  </header>
-
-  <!-- Section 1: Hero -->
-  <section id="home" class="section">
-    <h2>Legacy of The Avatar: Avatar The Last Airbender Archives</h2>
-    <img src="images/avatar-group.jpg" alt="Avatar Group" />
-    <div class="buttons">
-      <button>Learn More</button>
-      <button>Begin Now</button>
-    </div>
-  </section>
-
-  <!-- Section 2: Highlights -->
-  <section id="explore" class="section light">
-    <h2>Explore the Legacy of Avatar The Last Airbender</h2>
-    <div class="card-grid">
-      <!-- Repeat this card for each point -->
-      <div class="card">
-        <p>Delve into episode synopses and uncover important themes</p>
-      </div>
-      <!-- more cards... -->
-    </div>
-    <button>Explore Now</button>
-  </section>
-
-  <!-- Section 3: World of Avatar -->
-  <section id="details" class="section light">
-    <h2>Explore the World of Avatar</h2>
-    <p>Dive into detailed analyses about episodes, characters, and more.</p>
-    <nav class="tabs">
-      <button class="active">Overview</button>
-      <button>Episodes</button>
-      <button>Characters</button>
-      <button>Theories</button>
-    </nav>
-    <div class="content-grid">
-      <!-- Sample content card -->
-      <div class="content-card">
-        <img src="images/episode-breakdown.jpg" alt="Episode Breakdown" />
-        <h3>Episode breakdown</h3>
-        <p>Discover what happens in each episode and the impact it has on the show.</p>
-      </div>
-      <!-- more content cards... -->
-    </div>
-  </section>
-
-</body>
-</html>
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fdf1dc; /* Light background */
+    color: #2e2e2e; /* Dark text */
+    scroll-behavior: smooth;
+  }
+  
+  /* Header */
+  header {
+    background-color: #fff5d7; /* Soft yellow background */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d6b07e; /* Golden border */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #2e2e2e;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 60px 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #d19964; /* Warm brown background */
+    text-align: center;
+    color: #1a1a1a;
+  }
+  
+  .hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+  }
+  
+  .hero .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .hero button {
+    background-color: #f3c98b; /* Light brown button */
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    box-shadow: 3px 3px 0 #000;
+  }
+  
+  .hero button:hover {
+    background-color: #e2b774; /* Darker brown on hover */
+  }
+  
+  /* Explore Section */
+  .explore {
+    text-align: center;
+    background-color: #fdf6e3; /* Light yellow background */
+  }
+  
+  .explore h2 {
+    font-size: 1.5rem;
+  }
+  
+  .explore p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background-color: #f7ebd1; /* Card background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    padding: 12px 24px;
+    background-color: #d19964; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #a57742; /* Darker button color */
+  }
+  
+  /* Details Section */
+  .details {
+    background-color: #f9f5e3; /* Light beige background */
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+  }
+  
+  .tabs button {
+    padding: 10px 20px;
+    border: 2px solid #d19964;
+    background-color: #f7ebd1;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .tabs button.active {
+    background-color: #d19964;
+    color: white;
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+  
+  .content-grid img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .content-grid .content-card {
+    background-color: #f7ebd1; /* Card background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    background-color: #fff5d7; /* Soft yellow */
+    border-top: 2px solid #d6b07e;
+  }
+  
