@@ -276,22 +276,21 @@ nav a:hover {
 .content-card a:hover {
   color: #2e2e2e;
 }
-.name-link,
-.name-link:link,
-.name-link:visited,
-.name-link:hover,
-.name-link:active {
-  all: unset; /* Remove all inherited link styles */
-  color: #9e7d53; /* Light brown */
+.name-link {
+  color: #9e7d53 !important; /* Force light brown */
+  text-decoration: none !important;
   font-weight: bold;
   cursor: pointer;
-  text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.name-link:visited {
+  color: #9e7d53 !important; /* Match unvisited link */
 }
 
 .name-link:hover {
   transform: scale(1.1);
-  color: #7d5b3e;
+  color: #7d5b3e !important;
 }
 
 
