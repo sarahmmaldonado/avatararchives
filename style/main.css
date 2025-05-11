@@ -93,6 +93,13 @@ nav a {
   color: #2e2e2e;
   font-weight: bold;
   font-size: 0.95rem;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover grow effect */
+nav a:hover {
+  transform: scale(1.1); /* Grow on hover */
 }
 
 /* HERO SECTION */
@@ -100,7 +107,13 @@ nav a {
   background-color: #e6c49a; /* Light orange-brown background */
   padding: 50px 20px;
   text-align: center;
+  height: 100vh; /* Makes the hero section take up the full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
 }
+
 
 .hero img {
   width: 60%;
