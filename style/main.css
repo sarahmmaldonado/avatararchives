@@ -288,5 +288,9 @@ nav a:hover {
   transform: scale(1.1); /* Grow effect */
   color: #7d5b3e; /* Darker brown on hover */
 }
+.name-link:visited {
+  color: #9e7d53; /* Same as the default light brown */
+}
+
 
 
