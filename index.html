@@ -2,90 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Legacy of The Avatar</title>
   <link rel="stylesheet" href="style/main.css" />
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <div class="nav accent-primary-nav">
+    <div class="nav-left">
+      <a href="#" class="nav-logo w-inline-block">
+        <div class="nav-logo-icon"></div>
+        <div class="paragraph-lg utility-margin-bottom">Legacy of The Avatar: Avatar The Last Airbender Archives</div>
+      </a>
+    </div>
 
-  <!-- Header Navigation -->
-  <header>
-    <h1>Legacy of The Avatar: Avatar The Last Airbender Archives - Sarah Maldonado</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#explore">Episodes</a>
-      <a href="#details">About</a>
-      <a href="#author">More about the Author</a>
+    <div class="nav-right">
+      <nav class="w-dropdown-list">
+        <a href="#" class="w-dropdown-link">Book One: Water</a>
+        <a href="#" class="w-dropdown-link">Book Two: Earth</a>
+        <a href="#" class="w-dropdown-link">Book Three: Air</a>
+      </nav>
+
+      <ul class="nav-menu-list">
+        <li class="nav-menu-list-item">
+          <a href="/about" class="nav-link w-inline-block">About</a>
+        </li>
+      </ul>
+
+      <a href="https://sarahmmaldonado.github.io/index.html" target="_blank" class="external-link">
+        Visit my Portfolio
+      </a>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-mobile-menu-button w-nav-button">
+      <a href="/" aria-current="page" class="w-nav-link w--current">Home</a>
+    </div>
+
+    <nav role="navigation" class="nav-menu w-nav-menu">
+      <ul role="list" class="nav-menu-list w-list-unstyled">
+        <li class="nav-menu-list-item">
+          <div class="w-dropdown">
+            <div class="w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>Episodes</div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </nav>
-  </header>
+  </div>
 
-  <!-- Section 1: Hero -->
+  <!-- Hero Section -->
   <section id="home" class="section">
     <h2>Legacy of The Avatar: Avatar The Last Airbender Archives</h2>
     <img src="images/homepage.jpg" alt="Avatar Group" />
-    <div class="buttons">
-      <button>Learn More</button>
-      <button>Begin Now</button>
+    <div class="button-group align-center">
+      <a href="#explore" class="button w-button">Learn More</a>
+      <a href="#episodes" class="button secondary-button w-button">Begin Now</a>
     </div>
   </section>
 
-  <!-- Section 2: Highlights -->
-  <section id="explore" class="section light">
-    <h2>Explore the Legacy of Avatar The Last Airbender</h2>
-    <div class="card-grid">
-      <!-- Repeat this card for each point -->
-      <div class="card">
-        <p>Delve into episode synopses and uncover important themes</p>
+  <!-- Explore Section -->
+  <section id="explore" class="section secondary-section">
+    <div class="container">
+      <h2 class="utility-text-align-center utility-margin-bottom-0">Explore the Legacy of Avatar</h2>
+      <div class="w-layout-grid grid-layout desktop-4-column tablet-3-column mobile-landscape-flex-vertical">
+        <div id="w-node-f330d058-b7b9-e2d0-10f9-9340e7041225-d3d8c712" class="flex-horizontal">
+          <p class="utility-margin-bottom">Delve into episode synopses and uncover important themes</p>
+        </div>
+        <div id="w-node-bb5316b6-eDea-0a3d-ac35-1e6a1d5425e6-d3d8c712" class="flex-horizontal">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <g class="nc-icon-wrapper" stroke-linecap="square" stroke-linejoin="miter">
+              <line x1="1" y1="12" x2="23" y2="12" stroke="currentColor"></line>
+              <line x1="1" y1="5" x2="23" y2="5"></line>
+              <line x1="1" y1="19" x2="23" y2="19"></line>
+            </g>
+          </svg>
+        </div>
       </div>
-      <!-- more cards... -->
     </div>
-    <button>Explore Now</button>
   </section>
 
-  <!-- Section 3: World of Avatar -->
-  <section id="details" class="section light">
-    <h2>Explore the World of Avatar</h2>
-    <p>Dive into detailed analyses about episodes, characters, and more.</p>
-    <nav class="tabs">
-      <button class="active">Overview</button>
-      <button>Episodes</button>
-      <button>Characters</button>
-      <button>Theories</button>
-    </nav>
-    <div class="content-grid">
-      <!-- Sample content card -->
-      <div class="content-card">
-        <img src="images/episode_breakdown.jpeg" alt="Episode Breakdown" />
-        <h3>Episode breakdown</h3>
-        <p>Discover what happens in each episode and the impact it has on the show.</p>
+  <!-- Avatar World Section -->
+  <section id="episodes" class="section secondary-section">
+    <div class="container">
+      <div class="utility-text-align-center utility-margin-bottom-3rem">
+        <h2 class="h2-heading">Explore the World of Avatar</h2>
+        <p class="paragraph-lg utility-margin-bottom-0">Dive into detailed analyses about episodes, characters, and more.</p>
       </div>
-      <!-- more content cards... -->
-      <div class="content-grid">
-        <!-- Sample content card -->
-        <div class="content-card">
-          <img src="images/zuko.webp" alt="Character Spotlight" />
-          <h3>Character Spotlight</h3>
-          <p>Uncover the complexities and growth of your favorite characters.</p>
+      <div class="tab-menu">
+        <a data-w-tab="Tab 1" class="tab-menu-link utility-text-align-center w-tab-link w--current">
+          <div>Overview</div>
+        </a>
+        <a data-w-tab="Tab 2" class="tab-menu-link utility-text-align-center w-tab-link">
+          <div>Episodes</div>
+        </a>
+        <a data-w-tab="Tab 3" class="tab-menu-link utility-text-align-center w-tab-link">
+          <div>Characters</div>
+        </a>
+      </div>
+      <div class="content">
+        <div class="flex-horizontal">
+          <p class="utility-margin-bottom-0">Discover the rich lore and history of the Avatar universe.</p>
         </div>
-         <!-- more content cards... -->
-      <div class="content-grid">
-        <!-- Sample content card -->
-        <div class="content-card">
-          <img src="images/zutara.webp" alt="Fan Theories" />
-          <h3>Fan Theories</h3>
-          <p>Explore compelling theories that add depth to the Avatar universe.</p>
+        <div class="flex-horizontal">
+          <p class="utility-margin-bottom-0">Stay updated with the latest news about upcoming releases.</p>
         </div>
-           <!-- more content cards... -->
-      <div class="content-grid">
-        <!-- Sample content card -->
-        <div class="content-card">
-          <img src="images/turtle.jpg" alt="Episode Review" />
-          <h3>Episode Review</h3>
-          <p>Get a comprehensive review of each episode's themes and impact.</p>
+        <div class="flex-horizontal">
+          <p class="utility-margin-bottom-0">Join discussions on pivotal moments and plot developments.</p>
         </div>
-        
+        <div class="flex-horizontal">
+          <p class="utility-margin-bottom-0">Explore the elements: Water, Earth, Fire, Air</p>
+        </div>
+        <div class="text-block">
+          <p>Analyze characters with in-depth profiles and insights.</p>
+        </div>
+      </div>
     </div>
   </section>
-
 </body>
 </html>
+
