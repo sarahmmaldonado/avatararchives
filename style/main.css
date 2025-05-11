@@ -30,23 +30,17 @@ header {
   font-size: 0.95rem;
 }
 
-/* Link styling for your name */
-.name-link {
-  text-decoration: none;
-  color: #a67c52; /* Lighter brown color */
-  font-weight: bold;
-  transition: transform 0.3s ease, color 0.3s ease; /* Add transition effect */
-}
-
-.name-link:hover {
-  transform: scale(1.1); /* Grow effect on hover */
-  color: #6f4f1f; /* Darker brown color on hover */
-}
-
+/* Updated link style for your name */
 .brand-box a {
   text-decoration: none;
-  color: #2e2e2e;
+  color: #9e7d53; /* Lighter brown color */
   font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease; /* Add smooth transition for grow and color change */
+}
+
+.brand-box a:hover {
+  transform: scale(1.1); /* Grow effect on hover */
+  color: #7d5b3e; /* Darker brown color when hovered */
 }
 
 /* NAV LINKS (RIGHT SIDE) */
