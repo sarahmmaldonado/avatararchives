@@ -4,14 +4,102 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Legacy of The Avatar</title>
-  <link rel="stylesheet" href="style/main.css" />
+  <style>
+    /* GENERAL STYLES */
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #fdf1dc; /* Light creamy background */
+      color: #2e2e2e;
+      scroll-behavior: smooth;
+    }
+
+    /* HEADER STYLES */
+    header {
+      background-color: #fdf1dc; /* Cream */
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #d6b07e; /* Light brown border */
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    /* BRAND BOX (LEFT SIDE) */
+    .brand-box {
+      background-color: #f5e2ba; /* Slightly darker cream */
+      border-radius: 15px;
+      padding: 10px 20px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 0.95rem;
+    }
+
+    .brand-box a {
+      text-decoration: none;
+      color: #2e2e2e;
+      font-weight: bold;
+    }
+
+    /* NAVIGATION BAR (RIGHT SIDE) */
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2e2e2e;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    /* DROPDOWN MENU */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown > a {
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff5d7; /* Pale yellow */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+      border-radius: 10px;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      min-width: 180px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: #2e2e2e;
+      font-size: 0.9rem;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f5e2ba;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <!-- Header Navigation -->
   <header>
     <div class="brand-box">
-      Legacy of The Avatar: Avatar The Last Airbender Archives — 
-      <a href="https://sarahmmaldonado.github.io/index.html" target="_blank">Sarah Maldonado</a>
+      Legacy of The Avatar: Avatar The Last Airbender Archives — <a href="https://sarahmmaldonado.github.io/index.html" target="_blank">Sarah Maldonado</a>
     </div>
     <nav>
       <div class="dropdown">
@@ -27,61 +115,10 @@
     </nav>
   </header>
 
-
-  <!-- Section 1: Hero -->
-  <section id="home" class="section" style="background-color: #e6c49a;">
+  <!-- Main content (you can add your sections here) -->
+  <section id="home" class="section">
     <h2>Legacy of The Avatar: Avatar The Last Airbender Archives</h2>
-    <img src="images/homepage.jpg" alt="Avatar Group" />
-    <div class="buttons">
-      <button>Learn More</button>
-      <button>Begin Now</button>
-    </div>
-  </section>
-
-  <!-- Section 2: Highlights -->
-  <section id="explore" class="section light">
-    <h2>Explore the Legacy of Avatar The Last Airbender</h2>
-    <div class="card-grid">
-      <div class="card">
-        <p>Delve into episode synopses and uncover important themes</p>
-      </div>
-    </div>
-    <button>Explore Now</button>
-  </section>
-
-  <!-- Section 3: World of Avatar -->
-  <section id="details" class="section light">
-    <h2>Explore the World of Avatar</h2>
-    <p>Dive into detailed analyses about episodes, characters, and more.</p>
-    <nav class="tabs">
-      <button class="active">Overview</button>
-      <button>Episodes</button>
-      <button>Characters</button>
-      <button>Theories</button>
-    </nav>
-    <div class="content-grid">
-      <div class="content-card">
-        <img src="images/episode_breakdown.jpeg" alt="Episode Breakdown" />
-        <h3>Episode breakdown</h3>
-        <p>Discover what happens in each episode and the impact it has on the show.</p>
-      </div>
-      <div class="content-card">
-        <img src="images/zuko.webp" alt="Character Spotlight" />
-        <h3>Character Spotlight</h3>
-        <p>Uncover the complexities and growth of your favorite characters.</p>
-      </div>
-      <div class="content-card">
-        <img src="images/zutara.webp" alt="Fan Theories" />
-        <h3>Fan Theories</h3>
-        <p>Explore compelling theories that add depth to the Avatar universe.</p>
-      </div>
-      <div class="content-card">
-        <img src="images/turtle.jpg" alt="Episode Review" />
-        <h3>Episode Review</h3>
-        <p>Get a comprehensive review of each episode's themes and impact.</p>
-      </div>
-    </div>
+    <p>Welcome to the archives of Avatar: The Last Airbender!</p>
   </section>
 </body>
 </html>
-
