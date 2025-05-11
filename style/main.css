@@ -1,13 +1,13 @@
-/* General styles */
+/* General body styles */
 body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
-  background-color: #fdf1dc;
+  background-color: #fdf1dc; /* Light creamy background */
   color: #2e2e2e;
   scroll-behavior: smooth;
 }
 
-/* Navbar */
+/* Navbar Styles */
 header {
   background-color: #fdf1dc;
   padding: 15px 30px;
@@ -19,34 +19,23 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  width: 100%;
 }
 
-/* Brand box */
 .brand-box {
   background-color: #f5e2ba;
   border-radius: 15px;
   padding: 10px 20px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   font-size: 0.95rem;
-  transition: transform 0.2s ease;
-}
-
-.brand-box:hover {
-  transform: scale(1.03);
 }
 
 .brand-box a {
   text-decoration: none;
   color: #2e2e2e;
   font-weight: bold;
-  transition: text-shadow 0.3s ease;
 }
 
-.brand-box a:hover {
-  text-shadow: 0 0 6px rgba(255, 200, 0, 0.8);
-}
-
-/* Nav links */
 nav {
   display: flex;
   align-items: center;
@@ -60,41 +49,7 @@ nav a {
   font-size: 0.95rem;
 }
 
-/* Dropdown */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff5d7;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-  border-radius: 10px;
-  top: 100%;
-  left: 0;
-  min-width: 180px;
-  z-index: 1000;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-  color: #2e2e2e;
-  font-size: 0.9rem;
-}
-
-.dropdown-content a:hover {
-  background-color: #f5e2ba;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Hero section */
+/* Hero Section */
 .hero {
   background-color: #e6c49a; /* Orange background */
   padding: 50px 0;
@@ -102,14 +57,14 @@ nav a {
 }
 
 .hero img {
-  width: 60%; /* Adjusted size */
-  max-width: 500px; /* Set a max width */
-  border-radius: 15px; /* Rounded corners */
+  width: 50%; /* Make the image smaller */
+  max-width: 400px; /* Ensure image doesn't grow too large */
+  border-radius: 15px; /* Round the corners */
   margin: 0 auto; /* Centering the image */
   display: block;
 }
 
-/* Buttons */
+/* Buttons in Hero Section */
 .buttons button {
   margin: 10px;
   padding: 10px 20px;
