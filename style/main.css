@@ -1,36 +1,32 @@
-/* General Body and Page Layout */
+/* GENERAL STYLES */
 body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
   background-color: #fdf1dc; /* Light creamy background */
   color: #2e2e2e;
   scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100vh;
 }
 
-/* Navbar Styles */
+/* NAV BAR HEADER */
 header {
   background-color: #fdf1dc;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #d6b07e;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for navbar */
+  border-bottom: 2px solid #d6b07e; /* Light brown border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Navbar shadow */
   position: sticky;
   top: 0;
-  width: 100%;
+  z-index: 10;
 }
 
+/* BRAND BOX (LEFT SIDE) */
 .brand-box {
-  background-color: #f5e2ba;
+  background-color: #f5e2ba; /* Slightly darker cream */
   border-radius: 15px;
   padding: 10px 20px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 0.95rem;
 }
 
@@ -40,12 +36,58 @@ header {
   font-weight: bold;
 }
 
+/* NAV LINKS (RIGHT SIDE) */
 nav {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
+/* DROPDOWN MENU */
+.dropdown {
+  position: relative;
+}
+
+.dropdown > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #2e2e2e;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff5d7; /* Pale yellow */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  border-radius: 10px;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 180px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 0.9rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5e2ba;
+}
+
+/* Show dropdown when hovering */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* REGULAR NAV LINKS */
 nav a {
   text-decoration: none;
   color: #2e2e2e;
@@ -53,41 +95,35 @@ nav a {
   font-size: 0.95rem;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero {
-  background-color: #e6c49a; /* Orange background */
-  padding: 50px 0;
+  background-color: #e6c49a; /* Light orange-brown background */
+  padding: 50px 20px;
   text-align: center;
-  width: 100%;
 }
 
 .hero img {
-  width: 50%; /* Image is smaller */
-  max-width: 400px; /* Ensures it doesn't grow too large */
-  border-radius: 15px; /* Rounded corners */
-  margin: 0 auto; /* Centers image horizontally */
-  display: block;
-}
-
-/* Buttons in Hero Section */
-.buttons {
-  display: flex;
-  justify-content: center;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 15px; /* Rounded corners for the image */
   margin-top: 20px;
 }
 
-.buttons button {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #e6c49a;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+.hero .buttons {
+  margin-top: 20px;
 }
 
-.buttons button:hover {
+.hero button {
   background-color: #d6b07e;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero button:hover {
+  background-color: #b98f59;
 }
