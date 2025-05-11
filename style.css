@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Legacy of The Avatar</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <h1>Legacy of The Avatar: Avatar The Last Airbender Archives - Sarah Maldonado</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#explore">Episodes</a>
+      <a href="#details">About</a>
+      <a href="#author">More about the Author</a>
+    </nav>
+  </header>
+
+  <!-- Section 1: Hero -->
+  <section id="home" class="section">
+    <h2>Legacy of The Avatar: Avatar The Last Airbender Archives</h2>
+    <img src="images/avatar-group.jpg" alt="Avatar Group" />
+    <div class="buttons">
+      <button>Learn More</button>
+      <button>Begin Now</button>
+    </div>
+  </section>
+
+  <!-- Section 2: Highlights -->
+  <section id="explore" class="section light">
+    <h2>Explore the Legacy of Avatar The Last Airbender</h2>
+    <div class="card-grid">
+      <!-- Repeat this card for each point -->
+      <div class="card">
+        <p>Delve into episode synopses and uncover important themes</p>
+      </div>
+      <!-- more cards... -->
+    </div>
+    <button>Explore Now</button>
+  </section>
+
+  <!-- Section 3: World of Avatar -->
+  <section id="details" class="section light">
+    <h2>Explore the World of Avatar</h2>
+    <p>Dive into detailed analyses about episodes, characters, and more.</p>
+    <nav class="tabs">
+      <button class="active">Overview</button>
+      <button>Episodes</button>
+      <button>Characters</button>
+      <button>Theories</button>
+    </nav>
+    <div class="content-grid">
+      <!-- Sample content card -->
+      <div class="content-card">
+        <img src="images/episode-breakdown.jpg" alt="Episode Breakdown" />
+        <h3>Episode breakdown</h3>
+        <p>Discover what happens in each episode and the impact it has on the show.</p>
+      </div>
+      <!-- more content cards... -->
+    </div>
+  </section>
+
+</body>
+</html>
