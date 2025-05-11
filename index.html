@@ -1,126 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Legacy of The Avatar</title>
   <link rel="stylesheet" href="style/main.css" />
+  <style>
+    :root {
+      --orange-brown: #d8a774;
+      --creamy: #f5f1e7;
+      --earthy-green: #7c9473;
+      --earthy-brown: #5a4632;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: var(--creamy);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--creamy);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--earthy-brown);
+      font-weight: bold;
+    }
+
+    #home {
+      background-color: var(--orange-brown);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .section {
+      background-color: var(--creamy);
+      padding: 4rem 1rem;
+    }
+
+    .card-grid, .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card, .content-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .buttons button {
+      margin: 1rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--earthy-green);
+      color: white;
+      font-size: 1rem;
+    }
+  </style>
 </head>
+
 <body>
-  <!-- Navigation Bar -->
-  <div class="nav accent-primary-nav">
-    <div class="nav-left">
-      <a href="#" class="nav-logo w-inline-block">
-        <div class="nav-logo-icon"></div>
-        <div class="paragraph-lg utility-margin-bottom">Legacy of The Avatar: Avatar The Last Airbender Archives</div>
-      </a>
-    </div>
-
-    <div class="nav-right">
-      <nav class="w-dropdown-list">
-        <a href="#" class="w-dropdown-link">Book One: Water</a>
-        <a href="#" class="w-dropdown-link">Book Two: Earth</a>
-        <a href="#" class="w-dropdown-link">Book Three: Air</a>
-      </nav>
-
-      <ul class="nav-menu-list">
-        <li class="nav-menu-list-item">
-          <a href="/about" class="nav-link w-inline-block">About</a>
-        </li>
-      </ul>
-
-      <a href="https://sarahmmaldonado.github.io/index.html" target="_blank" class="external-link">
-        Visit my Portfolio
-      </a>
-    </div>
-
-    <!-- Mobile Navigation -->
-    <div class="nav-mobile-menu-button w-nav-button">
-      <a href="/" aria-current="page" class="w-nav-link w--current">Home</a>
-    </div>
-
-    <nav role="navigation" class="nav-menu w-nav-menu">
-      <ul role="list" class="nav-menu-list w-list-unstyled">
-        <li class="nav-menu-list-item">
-          <div class="w-dropdown">
-            <div class="w-dropdown-toggle">
-              <div class="w-icon-dropdown-toggle"></div>
-              <div>Episodes</div>
-            </div>
-          </div>
-        </li>
-      </ul>
+  <header>
+    <h1>Legacy of The Avatar: ATLA Archives</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#books">Books</a>
+      <a href="#episodes">Episodes</a>
+      <a href="https://sarahmmaldonado.github.io/index.html" target="_blank">Portfolio</a>
     </nav>
-  </div>
+  </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="section">
-    <h2>Legacy of The Avatar: Avatar The Last Airbender Archives</h2>
-    <img src="images/homepage.jpg" alt="Avatar Group" />
-    <div class="button-group align-center">
-      <a href="#explore" class="button w-button">Learn More</a>
-      <a href="#episodes" class="button secondary-button w-button">Begin Now</a>
+  <section id="home">
+    <h2>Welcome to the Archives</h2>
+    <p>Explore the stories, history, and wisdom of Avatar Aang and his journey across the Four Nations.</p>
+    <img src="images/avatar-group.jpg" alt="Team Avatar" />
+    <div class="buttons">
+      <button>Learn More</button>
+      <button>Begin Now</button>
     </div>
   </section>
 
-  <!-- Explore Section -->
-  <section id="explore" class="section secondary-section">
-    <div class="container">
-      <h2 class="utility-text-align-center utility-margin-bottom-0">Explore the Legacy of Avatar</h2>
-      <div class="w-layout-grid grid-layout desktop-4-column tablet-3-column mobile-landscape-flex-vertical">
-        <div id="w-node-f330d058-b7b9-e2d0-10f9-9340e7041225-d3d8c712" class="flex-horizontal">
-          <p class="utility-margin-bottom">Delve into episode synopses and uncover important themes</p>
-        </div>
-        <div id="w-node-bb5316b6-eDea-0a3d-ac35-1e6a1d5425e6-d3d8c712" class="flex-horizontal">
-          <svg xmlns="http://www.w3.org/2000/svg">
-            <g class="nc-icon-wrapper" stroke-linecap="square" stroke-linejoin="miter">
-              <line x1="1" y1="12" x2="23" y2="12" stroke="currentColor"></line>
-              <line x1="1" y1="5" x2="23" y2="5"></line>
-              <line x1="1" y1="19" x2="23" y2="19"></line>
-            </g>
-          </svg>
-        </div>
-      </div>
+  <section id="about" class="section">
+    <h2>Explore the Legacy</h2>
+    <div class="card-grid">
+      <div class="card">Character Profiles</div>
+      <div class="card">Cultural Inspirations</div>
+      <div class="card">Philosophies</div>
+      <div class="card">Bending Arts</div>
     </div>
   </section>
 
-  <!-- Avatar World Section -->
-  <section id="episodes" class="section secondary-section">
-    <div class="container">
-      <div class="utility-text-align-center utility-margin-bottom-3rem">
-        <h2 class="h2-heading">Explore the World of Avatar</h2>
-        <p class="paragraph-lg utility-margin-bottom-0">Dive into detailed analyses about episodes, characters, and more.</p>
+  <section id="books" class="section">
+    <h2>The Avatar Books</h2>
+    <div class="card-grid">
+      <div class="card">Book One: Water</div>
+      <div class="card">Book Two: Earth</div>
+      <div class="card">Book Three: Fire</div>
+    </div>
+  </section>
+
+  <section id="episodes" class="section">
+    <h2>Episodes Overview</h2>
+    <div class="content-grid">
+      <div class="content-card">
+        <img src="images/water-tribe.jpg" alt="Southern Water Tribe" />
+        <p>Episode Synopses</p>
       </div>
-      <div class="tab-menu">
-        <a data-w-tab="Tab 1" class="tab-menu-link utility-text-align-center w-tab-link w--current">
-          <div>Overview</div>
-        </a>
-        <a data-w-tab="Tab 2" class="tab-menu-link utility-text-align-center w-tab-link">
-          <div>Episodes</div>
-        </a>
-        <a data-w-tab="Tab 3" class="tab-menu-link utility-text-align-center w-tab-link">
-          <div>Characters</div>
-        </a>
+      <div class="content-card">
+        <img src="images/iroh.jpg" alt="Uncle Iroh" />
+        <p>Character Deep Dives</p>
       </div>
-      <div class="content">
-        <div class="flex-horizontal">
-          <p class="utility-margin-bottom-0">Discover the rich lore and history of the Avatar universe.</p>
-        </div>
-        <div class="flex-horizontal">
-          <p class="utility-margin-bottom-0">Stay updated with the latest news about upcoming releases.</p>
-        </div>
-        <div class="flex-horizontal">
-          <p class="utility-margin-bottom-0">Join discussions on pivotal moments and plot developments.</p>
-        </div>
-        <div class="flex-horizontal">
-          <p class="utility-margin-bottom-0">Explore the elements: Water, Earth, Fire, Air</p>
-        </div>
-        <div class="text-block">
-          <p>Analyze characters with in-depth profiles and insights.</p>
-        </div>
+      <div class="content-card">
+        <img src="images/bending.jpg" alt="Elemental Bending" />
+        <p>Bending Techniques</p>
+      </div>
+      <div class="content-card">
+        <img src="images/ba-sing-se.jpg" alt="Ba Sing Se" />
+        <p>Historical Insights</p>
       </div>
     </div>
   </section>
 </body>
-</html>
 
+</html>
