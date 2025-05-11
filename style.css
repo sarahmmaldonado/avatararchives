@@ -28,6 +28,7 @@ header {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 0.95rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
 }
 
 .brand-box:hover {
@@ -50,7 +51,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    gap: 40px; /* Increased spacing between nav items */
+    gap: 50px; /* Increased spacing between nav items */
 }
 
 /* DROPDOWN MENU */
