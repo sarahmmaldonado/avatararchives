@@ -2,71 +2,66 @@
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #fdf1dc; /* Light creamy background */
+    background-color: #fdf1dc;
     color: #2e2e2e;
     scroll-behavior: smooth;
-}
-
-/* NAV BAR HEADER */
-header {
-    background-color: #fdf1dc; /* Cream */
+  }
+  
+  header {
+    background-color: #fdf1dc;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #d6b07e; /* Light brown border */
+    border-bottom: 2px solid #d6b07e;
     position: sticky;
     top: 0;
     z-index: 10;
-}
-
-/* BRAND BOX (LEFT SIDE) */
-.brand-box {
-    background-color: #f5e2ba; /* Slightly darker cream */
+  }
+  
+  .brand-box {
+    background-color: #f5e2ba;
     border-radius: 15px;
     padding: 10px 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 0.95rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: inline-block;
-}
-
-.brand-box:hover {
-    transform: scale(1.05); /* Grow effect */
+  }
+  
+  .brand-box:hover {
+    transform: scale(1.05);  /* Make it grow on hover */
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.brand-box a {
+  }
+  
+  .brand-box a {
     text-decoration: none;
     color: #2e2e2e;
     font-weight: bold;
     transition: text-shadow 0.3s ease;
-}
-
-.brand-box a:hover {
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Glow effect */
-}
-
-/* NAV LINKS (RIGHT SIDE) */
-nav {
+  }
+  
+  .brand-box a:hover {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);  /* Glow effect */
+  }
+  
+  nav {
     display: flex;
     align-items: center;
-    gap: 50px; /* Increased spacing between nav items */
-}
-
-/* DROPDOWN MENU */
-.dropdown {
+    gap: 20px;
+  }
+  
+  .dropdown {
     position: relative;
-}
-
-.dropdown > a {
+  }
+  
+  .dropdown > a {
     cursor: pointer;
-}
-
-.dropdown-content {
+  }
+  
+  .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fff5d7; /* Pale yellow */
+    background-color: #fff5d7;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
     border-radius: 10px;
@@ -74,28 +69,28 @@ nav {
     left: 0;
     z-index: 1000;
     min-width: 180px;
-}
-
-.dropdown-content a {
+  }
+  
+  .dropdown-content a {
     display: block;
     padding: 8px 16px;
     text-decoration: none;
     color: #2e2e2e;
     font-size: 0.9rem;
-}
-
-.dropdown-content a:hover {
+  }
+  
+  .dropdown-content a:hover {
     background-color: #f5e2ba;
-}
-
-.dropdown:hover .dropdown-content {
+  }
+  
+  .dropdown:hover .dropdown-content {
     display: block;
-}
-
-/* REGULAR NAV LINKS */
-nav a {
+  }
+  
+  nav a {
     text-decoration: none;
     color: #2e2e2e;
     font-weight: bold;
     font-size: 0.95rem;
-}
+  }
+  
