@@ -5,10 +5,10 @@ body {
     background-color: #fdf1dc; /* Light creamy background */
     color: #2e2e2e;
     scroll-behavior: smooth;
-  }
-  
-  /* NAV BAR HEADER */
-  header {
+}
+
+/* NAV BAR HEADER */
+header {
     background-color: #fdf1dc; /* Cream */
     padding: 15px 30px;
     display: flex;
@@ -18,40 +18,51 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
-  }
-  
-  /* BRAND BOX (LEFT SIDE) */
-  .brand-box {
+}
+
+/* BRAND BOX (LEFT SIDE) */
+.brand-box {
     background-color: #f5e2ba; /* Slightly darker cream */
     border-radius: 15px;
     padding: 10px 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 0.95rem;
-  }
-  
-  .brand-box a {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-box:hover {
+    transform: scale(1.05); /* Grow effect */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.brand-box a {
     text-decoration: none;
     color: #2e2e2e;
     font-weight: bold;
-  }
-  
-  /* NAV LINKS (RIGHT SIDE) */
-  nav {
+    transition: text-shadow 0.3s ease;
+}
+
+.brand-box a:hover {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Glow effect */
+}
+
+/* NAV LINKS (RIGHT SIDE) */
+nav {
     display: flex;
     align-items: center;
-    gap: 20px;
-  }
-  
-  /* DROPDOWN MENU */
-  .dropdown {
+    gap: 40px; /* Increased spacing between nav items */
+}
+
+/* DROPDOWN MENU */
+.dropdown {
     position: relative;
-  }
-  
-  .dropdown > a {
+}
+
+.dropdown > a {
     cursor: pointer;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #fff5d7; /* Pale yellow */
@@ -62,29 +73,28 @@ body {
     left: 0;
     z-index: 1000;
     min-width: 180px;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     display: block;
     padding: 8px 16px;
     text-decoration: none;
     color: #2e2e2e;
     font-size: 0.9rem;
-  }
-  
-  .dropdown-content a:hover {
+}
+
+.dropdown-content a:hover {
     background-color: #f5e2ba;
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  
-  /* REGULAR NAV LINKS */
-  nav a {
+}
+
+/* REGULAR NAV LINKS */
+nav a {
     text-decoration: none;
     color: #2e2e2e;
     font-weight: bold;
     font-size: 0.95rem;
-  }
-  
+}
