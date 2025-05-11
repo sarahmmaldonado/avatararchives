@@ -148,4 +148,61 @@ nav a:hover {
 .hero button:hover {
   transform: scale(1.1); /* Grow effect on hover */
 }
+/* MORE ABOUT AVATAR SECTION */
+#more-about {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fef9f1; /* Light creamy color */
+}
+
+#more-about h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2e2e2e;
+}
+
+.faq {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.faq details {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.faq summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+  list-style: none;
+}
+
+.faq p {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.explore-btn {
+  background-color: #d6b07e;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 14px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.explore-btn:hover {
+  transform: scale(1.1);
+}
 
