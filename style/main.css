@@ -150,6 +150,7 @@ nav a:hover {
 }
 /* More About Avatar Section */
 /* More About Section */
+/* Full-page section */
 #more-about {
   min-height: 100vh;
   background-color: #fef9f1;
@@ -158,14 +159,16 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
+/* Section Title */
 #more-about h2 {
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
+/* FAQ */
 .faq {
   width: 100%;
   max-width: 800px;
@@ -174,23 +177,29 @@ nav a:hover {
 }
 
 .faq-item {
-  padding: 20px 0;
   border-bottom: 1px solid #ccc;
+  padding: 20px 0;
 }
 
-.faq-item h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+.faq-question {
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
 }
 
-.faq-item p {
+.faq-answer {
+  display: none;
+  margin-top: 10px;
   font-size: 1.1rem;
-  margin: 0;
   color: #444;
 }
 
-/* Match Hero Button */
-.button-style {
+.faq-item:hover .faq-answer {
+  display: block;
+}
+
+/* Button (matches hero section) */
+.hero-button {
   background-color: #d6b07e;
   color: white;
   border: none;
@@ -203,7 +212,7 @@ nav a:hover {
   transition: transform 0.2s ease;
 }
 
-.button-style:hover {
+.hero-button:hover {
   transform: scale(1.05);
   background-color: #c59a66;
 }
