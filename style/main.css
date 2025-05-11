@@ -105,44 +105,44 @@ nav a:hover {
 /* HERO SECTION */
 .hero {
   background-color: #e6c49a; /* Light orange-brown background */
-  padding: 80px 20px; /* More space to make it look full screen */
-  text-align: center;
+  padding: 0; /* No padding for the section itself */
   height: 100vh; /* Full screen height */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
+  justify-content: center; /* Vertically center the content */
   align-items: center; /* Center content horizontally */
+  text-align: center;
 }
 
 .hero h2 {
-  font-size: 2rem; /* Adjusted title size */
-  margin-bottom: 20px;
+  font-size: 2.5rem; /* Larger font size for title */
+  margin-bottom: 30px; /* Space between title and image */
   color: #2e2e2e; /* Dark color for contrast */
-  font-weight: bold; /* Keep title bold */
+  font-weight: bold;
 }
 
 .hero img {
-  width: 80%; /* Make image wider */
-  max-width: 600px; /* Set a max width to ensure it doesn't get too large */
+  width: 90%; /* Make image larger */
+  max-width: 800px; /* Set max width to prevent it from getting too large */
   border-radius: 15px; /* Rounded corners */
-  margin-bottom: 30px;
+  margin-bottom: 30px; /* Space between image and buttons */
 }
 
 .hero .buttons {
   display: flex;
-  gap: 20px; /* More space between buttons */
+  gap: 30px; /* Increase space between buttons */
 }
 
 .hero button {
   background-color: #d6b07e; /* Light brown color */
   border: none;
   color: white;
-  font-size: 1rem;
-  padding: 12px 25px;
-  border-radius: 8px; /* Rounded corners for buttons */
+  font-size: 1.2rem;
+  padding: 14px 30px;
+  border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease; /* Smooth transition for hover */
+  transition: transform 0.3s ease;
 }
 
 .hero button:hover {
