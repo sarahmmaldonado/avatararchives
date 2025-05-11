@@ -20,26 +20,40 @@ body {
     z-index: 10;
   }
   
-  /* BRAND BOX STYLES (LEFT SIDE) */
+  /* BRAND BOX (LEFT SIDE) */
   .brand-box {
     background-color: #f5e2ba; /* Slightly darker cream */
     border-radius: 15px;
     padding: 10px 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 0.95rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Make the brand box grow when hovering */
+  .brand-box:hover {
+    transform: scale(1.05); /* Slightly grow the box */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Increase shadow for effect */
   }
   
   .brand-box a {
     text-decoration: none;
     color: #2e2e2e;
     font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Make the name glow when hovered */
+  .brand-box a:hover {
+    color: #ffcc00; /* Yellow glow on hover */
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
   }
   
   /* NAVIGATION BAR (RIGHT SIDE) */
   nav {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px; /* Increased gap for more spacing */
   }
   
   nav a {
@@ -85,5 +99,50 @@ body {
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+  
+  /* SECTION STYLES */
+  .section {
+    padding: 60px 30px;
+    text-align: center;
+    margin-bottom: 30px; /* Space between sections */
+  }
+  
+  .card-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Grow the card on hover */
+  }
+  
+  .content-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .content-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .content-card:hover {
+    transform: scale(1.05); /* Grow the content card on hover */
   }
   
