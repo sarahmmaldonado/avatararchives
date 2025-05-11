@@ -149,7 +149,7 @@ nav a:hover {
   transform: scale(1.1); /* Grow effect on hover */
 }
 /* More About Avatar Section */
-/* Section layout */
+/* More About Section */
 #more-about {
   min-height: 100vh;
   background-color: #fef9f1;
@@ -161,69 +161,49 @@ nav a:hover {
   padding: 40px 20px;
 }
 
-
 #more-about h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #2e2e2e;
 }
 
-/* FAQ layout */
 .faq {
+  width: 100%;
   max-width: 800px;
-  margin: 0 auto 40px;
   text-align: left;
+  margin-bottom: 30px;
 }
 
 .faq-item {
-  padding: 15px;
-  transition: background-color 0.3s ease;
-  position: relative;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
 }
 
-.faq-item:hover {
-  background-color: #f0ede6;
+.faq-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
-.question {
-  font-weight: bold;
+.faq-item p {
   font-size: 1.1rem;
-  cursor: pointer;
-  margin-bottom: 5px;
-}
-
-.answer {
-  display: none;
-  color: #444;
-  line-height: 1.5;
-  margin-top: 10px;
-}
-
-/* Show answer on hover */
-.faq-item:hover .answer {
-  display: block;
-}
-
-/* Lines between */
-.faq hr {
-  border: none;
-  border-top: 1px solid #ccc;
   margin: 0;
+  color: #444;
 }
 
-/* Button styling to match hero */
-.hero-btn {
+/* Match Hero Button */
+.button-style {
   background-color: #d6b07e;
-  border: none;
   color: white;
-  font-size: 1.2rem;
-  padding: 14px 30px;
+  border: none;
+  padding: 12px 28px;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
 }
 
-.hero-btn:hover {
-  transform: scale(1.1);
+.button-style:hover {
+  transform: scale(1.05);
+  background-color: #c59a66;
 }
