@@ -15,7 +15,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #d6b07e;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for navbar */
   position: sticky;
   top: 0;
   z-index: 10;
@@ -95,10 +95,18 @@ nav a {
 }
 
 /* Hero section */
+.hero {
+  background-color: #e6c49a; /* Orange background */
+  padding: 50px 0;
+  text-align: center;
+}
+
 .hero img {
-  width: 60%;
-  max-width: 500px;
-  border-radius: 15px;
+  width: 50%; /* Set to 50% for better sizing */
+  max-width: 400px; /* Max width for the image */
+  border-radius: 20px; /* Rounded corners */
+  display: inline-block;
+  margin: 0 auto;
 }
 
 /* Buttons */
