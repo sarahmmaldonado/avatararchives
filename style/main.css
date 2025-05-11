@@ -105,7 +105,7 @@ nav a:hover {
 /* HERO SECTION */
 .hero {
   background-color: #e6c49a; /* Light orange-brown background */
-  padding: 50px 20px;
+  padding: 80px 20px; /* More space to make it look full screen */
   text-align: center;
   height: 100vh; /* Full screen height */
   display: flex;
@@ -115,36 +115,37 @@ nav a:hover {
 }
 
 .hero h2 {
-  font-size: 3rem; /* Adjust size for the title */
+  font-size: 2rem; /* Adjusted title size */
   margin-bottom: 20px;
-  color: #2e2e2e; /* Dark text for contrast */
+  color: #2e2e2e; /* Dark color for contrast */
+  font-weight: bold; /* Keep title bold */
 }
 
 .hero img {
-  width: 70%; /* Adjust image size */
+  width: 60%; /* Adjusted image size */
   max-width: 450px; /* Set a max width to prevent large images */
-  border-radius: 15px;
+  border-radius: 15px; /* Rounded corners */
   margin-bottom: 30px;
 }
 
 .hero .buttons {
   display: flex;
-  gap: 15px;
+  gap: 20px; /* More space between buttons */
 }
 
 .hero button {
-  background-color: #d6b07e; /* Light brown color for buttons */
+  background-color: #d6b07e; /* Light brown color */
   border: none;
   color: white;
   font-size: 1rem;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 12px 25px;
+  border-radius: 8px; /* Rounded corners for buttons */
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; /* Smooth transition for hover */
 }
 
 .hero button:hover {
-  transform: scale(1.1); /* Grow effect when hovered */
+  transform: scale(1.1); /* Grow effect on hover */
 }
 
