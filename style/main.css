@@ -1,3 +1,11 @@
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* GENERAL STYLES */
 body {
   margin: 0;
@@ -277,21 +285,21 @@ nav a:hover {
   color: #2e2e2e;
 }
 .name-link {
-  color: #9e7d53 !important; /* Force light brown */
+  color: #9e7d53 !important;
   text-decoration: none !important;
   font-weight: bold;
-  cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .name-link:visited {
-  color: #9e7d53 !important; /* Match unvisited link */
+  color: #9e7d53 !important;
 }
 
 .name-link:hover {
   transform: scale(1.1);
   color: #7d5b3e !important;
 }
+
 
 
 
