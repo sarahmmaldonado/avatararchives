@@ -222,11 +222,7 @@ nav a:hover {
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   gap: 30px;
   margin-top: 40px;
-  visibility: hidden; /* Hide initially */
-}
-
-.content-grid.active {
-  visibility: visible;
+  visibility: visible; /* Ensure it's visible from the start */
 }
 
 .content-card {
@@ -245,20 +241,11 @@ nav a:hover {
 }
 
 .content-card h3 {
-  font-size: 1.
-  2rem;
+  font-size: 1.2rem;
   margin: 15px 0;
-  }
-  
-  .content-card p {
+}
+
+.content-card p {
   font-size: 1rem;
   color: #444;
-  }
-  
-  /* Footer (if needed later) */
-  footer {
-  background-color: #f5e2ba;
-  text-align: center;
-  padding: 20px;
-  font-size: 1rem;
-  }
+}
