@@ -148,9 +148,8 @@ nav a:hover {
 .hero button:hover {
   transform: scale(1.1); /* Grow effect on hover */
 }
+
 /* More About Avatar Section */
-/* More About Section */
-/* Full-page section */
 #more-about {
   min-height: 100vh;
   background-color: #fef9f1;
@@ -215,4 +214,55 @@ nav a:hover {
 .hero-button:hover {
   transform: scale(1.05);
   background-color: #c59a66;
+}
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 30px;
+  margin-top: 40px;
+  transition: all 0.3s ease;
+  visibility: hidden; /* Hide initially */
+}
+
+.content-grid.active {
+  visibility: visible;
+}
+
+.content-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.content-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.content-card h3 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+.content-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.content-card a {
+  text-decoration: none;
+  color: #d6b07e;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.content-card a:hover {
+  color: #2e2e2e;
 }
