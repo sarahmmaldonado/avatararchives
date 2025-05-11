@@ -7,7 +7,7 @@ body {
     scroll-behavior: smooth;
   }
   
-  /* HEADER STYLES */
+  /* HEADER / NAVBAR */
   header {
     background-color: #fdf1dc; /* Cream */
     padding: 15px 30px;
@@ -20,7 +20,7 @@ body {
     z-index: 10;
   }
   
-  /* BRAND BOX (LEFT SIDE) */
+  /* BRAND BOX */
   .brand-box {
     background-color: #f5e2ba; /* Slightly darker cream */
     border-radius: 15px;
@@ -30,40 +30,43 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  /* Make the brand box grow when hovering */
   .brand-box:hover {
-    transform: scale(1.05); /* Slightly grow the box */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Increase shadow for effect */
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #f5b25d;
   }
   
   .brand-box a {
     text-decoration: none;
     color: #2e2e2e;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: text-shadow 0.3s ease;
   }
   
-  /* Make the name glow when hovered */
   .brand-box a:hover {
-    color: #ffcc00; /* Yellow glow on hover */
-    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+    text-shadow: 0 0 5px #f0b255;
   }
   
-  /* NAVIGATION BAR (RIGHT SIDE) */
+  /* NAVIGATION MENU */
   nav {
     display: flex;
     align-items: center;
-    gap: 30px; /* Increased gap for more spacing */
+    gap: 40px; /* More spacing */
   }
   
+  /* NAV LINKS */
   nav a {
     text-decoration: none;
     color: #2e2e2e;
     font-weight: bold;
     font-size: 0.95rem;
+    transition: color 0.2s ease;
   }
   
-  /* DROPDOWN MENU */
+  nav a:hover {
+    color: #aa6c39;
+  }
+  
+  /* DROPDOWN STYLES */
   .dropdown {
     position: relative;
   }
@@ -75,7 +78,7 @@ body {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fff5d7; /* Pale yellow */
+    background-color: #fff5d7;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
     border-radius: 10px;
@@ -101,48 +104,73 @@ body {
     display: block;
   }
   
-  /* SECTION STYLES */
-  .section {
-    padding: 60px 30px;
+  /* SECTION: HERO */
+  .hero {
+    background-color: #e6c49a; /* Light orange/brown */
     text-align: center;
-    margin-bottom: 30px; /* Space between sections */
+    padding: 40px 20px;
   }
   
-  .card-grid {
-    display: flex;
+  /* SECTION: LIGHT */
+  .section.light {
+    background-color: #fdf1dc; /* Same creamy background */
+    padding: 40px 20px;
+  }
+  
+  /* CARD & GRID STYLES */
+  .card-grid, .content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    justify-content: center;
+    margin-top: 20px;
   }
   
-  .card {
-    background-color: #fff;
+  .card, .content-card {
+    background-color: #fff8e6;
+    border-radius: 15px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
   }
   
-  .card:hover {
-    transform: scale(1.05); /* Grow the card on hover */
+  .card:hover, .content-card:hover {
+    transform: scale(1.03);
   }
   
-  .content-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .content-card {
-    background-color: #fff;
-    padding: 20px;
+  /* BUTTONS */
+  button {
+    background-color: #aa6c39;
+    color: white;
+    border: none;
+    padding: 10px 18px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    transition: transform 0.3s ease;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
   }
   
-  .content-card:hover {
-    transform: scale(1.05); /* Grow the content card on hover */
+  button:hover {
+    background-color: #8a542c;
+  }
+  
+  /* TABS */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .tabs button {
+    background-color: #f5e2ba;
+    color: #2e2e2e;
+    border-radius: 8px;
+  }
+  
+  .tabs button.active {
+    background-color: #e6c49a;
+    font-weight: bold;
   }
   
