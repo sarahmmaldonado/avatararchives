@@ -1,8 +1,8 @@
 /* Base Styles */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif, Arial, sans-serif; /* Added fallback font */
-  background-color: #fdf7ed; /* Light creamy background */
+  font-family: 'Segoe UI', sans-serif, Arial, sans-serif;
+  background-color: #fdf7ed;
   color: #333;
 }
 
@@ -18,7 +18,7 @@ img {
 
 /* Header */
 header {
-  background-color: #f2c48e; /* Light orange-brown */
+  background-color: #f2c48e;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -92,9 +92,16 @@ nav a:hover {
   background-color: #6b4f30;
 }
 
-/* FAQ Section */
+/* More About Avatar Section */
 #more-about {
   padding: 2rem;
+  background-color: #fff4df; /* Soft cream color */
+  color: #4a3823;
+}
+
+#more-about h2 {
+  font-size: 2rem;
+  color: #4a3823;
 }
 
 .faq-item {
