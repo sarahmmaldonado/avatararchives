@@ -244,14 +244,14 @@ nav a:hover {
 
 .content-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
   gap: 2rem;
   padding: 1rem 0;
 }
 
 .content-card {
-  display: flex; /* Make it horizontal */
-  flex-direction: row; /* Image left, text right */
+  display: flex;
+  flex-direction: row;
   align-items: stretch;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -260,7 +260,7 @@ nav a:hover {
   color: inherit;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
-  height: 180px; /* Fixed height for consistency */
+  height: 180px;
 }
 
 .content-card:hover {
@@ -268,12 +268,11 @@ nav a:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-
 .content-card img {
-  width: 180px; /* Fixed width for image */
-  height: 100%;  /* Fill the height of the card */
+  width: 180px;
+  height: 100%;
   object-fit: cover;
-  flex-shrink: 0; /* Prevent shrinking */
+  flex-shrink: 0;
 }
 
 .description {
@@ -283,28 +282,12 @@ nav a:hover {
   justify-content: center;
 }
 
-
 .description h3 {
   margin: 0 0 10px;
 }
+
 .description p {
   margin: 0;
-}
-
-
-/* NAME LINK */
-.name-link {
-  text-decoration: none;
-  color: #9e7d53;
-  font-weight: bold;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-.name-link:hover {
-  transform: scale(1.1);
-  color: #d9b08c;
-}
-.name-link:visited {
-  color: #9e7d53;
 }
 
 @media (max-width: 768px) {
@@ -313,7 +296,7 @@ nav a:hover {
   }
 
   .content-card {
-    flex-direction: column; /* Stack vertically on mobile */
+    flex-direction: column;
     height: auto;
   }
 
