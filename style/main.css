@@ -352,7 +352,7 @@ a:hover {
 }
 /* Adding the orange line between the sections */
 #details {
-  border-top: 5px solid #f5a623; /* Orange line */
+  border-top: 2px solid #d6b07e; /* Orange line */
   padding-top: 20px; /* Adds some space from the top */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
@@ -361,7 +361,7 @@ a:hover {
 #details .tab-content {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Middle section shadow */
   padding: 20px;
-  background-color: #ffffff; /* Background color for better contrast */
+  background-color: #fdf1dc; /* Background color for better contrast */
   border-radius: 8px; /* Optional: Adds rounded corners */
 }
 
