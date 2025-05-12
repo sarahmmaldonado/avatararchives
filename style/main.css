@@ -184,6 +184,20 @@ nav a:hover {
 .faq-item:hover .faq-answer {
   display: block;
 }
+.name-link {
+  text-decoration: none;
+  color: #c2a378; /* lighter color */
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.name-link:hover {
+  transform: scale(1.1);
+  color: #e6c49a; /* even lighter on hover */
+}
+.name-link:visited {
+  color: #c2a378;
+}
+
 
 /* SHARED BUTTON */
 .hero-button {
