@@ -106,6 +106,7 @@ nav a:hover {
 }
 
 /* HERO SECTION */
+/* HERO SECTION */
 .hero {
   background-color: #e6c49a;
   padding: 0;
@@ -115,7 +116,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Added shadow */
 }
 
 .hero h2 {
