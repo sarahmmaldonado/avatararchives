@@ -298,5 +298,30 @@ nav a:hover {
 .name-link:visited {
   color: #9e7d53;
 }
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-button {
+  background-color: #d6b07e;
+  border: none;
+  padding: 12px 24px;
+  margin: 0 10px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button.active,
+.tab-button:hover {
+  background-color: #c59a66;
+}
+
 
 
