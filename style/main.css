@@ -198,6 +198,11 @@ nav a:hover {
   color: #c2a378;
 }
 
+.center-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
 /* SHARED BUTTON */
 .hero-button {
