@@ -322,6 +322,11 @@ nav a:hover {
 .tab-button:hover {
   background-color: #c59a66;
 }
+#details {
+  background-color: #fdf1dc;
+  padding: 50px 20px;
+}
+
 
 
 
