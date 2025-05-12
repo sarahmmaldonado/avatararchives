@@ -18,3 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+function scrollToSection() {
+  document.querySelector('#details').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+
