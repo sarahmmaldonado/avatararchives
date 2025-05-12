@@ -341,13 +341,31 @@ nav a:hover {
   font-size: 1.1rem;
   margin-bottom: 20px;
 }
+.details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+
+.details-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.details-container p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
 
 .tabs {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
+
 
 .tabs button {
   background-color: #f5e2ba;
