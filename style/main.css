@@ -97,26 +97,47 @@ nav a:hover {
   padding: 2rem;
   background-color: #fff4df; /* Soft cream color */
   color: #4a3823;
+  border-top: 3px solid #a89072; /* Adding a border line on top */
+  border-bottom: 3px solid #a89072; /* Adding a border line on bottom */
+  margin: 2rem 0; /* Adding margin to separate it from other sections */
 }
 
 #more-about h2 {
   font-size: 2rem;
   color: #4a3823;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #a89072; /* Line beneath the header */
+  padding-bottom: 0.5rem;
 }
 
 .faq-item {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .faq-question {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f2c48e;
+  border: 1px solid #a89072;
+  border-radius: 4px;
+}
+
+.faq-question:hover {
+  background-color: #a89072;
+  color: white;
 }
 
 .faq-answer {
   margin-left: 1rem;
   font-size: 0.95rem;
+  display: none; /* Hidden by default */
+}
+
+.faq-item.active .faq-answer {
+  display: block; /* Show answer when the item is active */
 }
 
 /* Tabs Navigation */
