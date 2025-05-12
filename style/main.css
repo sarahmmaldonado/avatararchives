@@ -187,6 +187,12 @@ nav a:hover {
   background-color: #6b4f30;
 }
 
+/* World of Avatar Section */
+#details {
+  padding: 2rem;
+  background-color: #f9f6f0;
+}
+
 /* Responsive Tweaks */
 @media (max-width: 768px) {
   header {
@@ -201,5 +207,9 @@ nav a:hover {
   .tabs {
     flex-direction: column;
     align-items: center;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
   }
 }
