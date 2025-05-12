@@ -223,30 +223,32 @@ nav a:hover {
 
 /* Assuming the following styles for your general layout */
 
-/* Container for grid */
+/* Container for the grid */
 .content-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
-  gap: 20px; /* Adds spacing between items */
+  gap: 20px; /* Adds spacing between the grid items */
   margin-bottom: 20px;
 }
 
 /* Card styling */
 .content-card {
   display: flex; /* Flexbox for layout */
-  align-items: center; /* Vertically centers the content */
+  align-items: center; /* Vertically center the content */
   border: 1px solid #ddd; /* Optional border */
-  padding: 10px;
+  padding: 15px;
   background-color: #f9f9f9;
 }
 
+/* Styling for images inside content cards */
 .content-card img {
-  width: 120px; /* Adjust size of the image */
-  height: 120px; /* Maintain square aspect ratio */
-  object-fit: cover; /* Ensures the image is cropped to fit */
-  margin-right: 15px; /* Space between image and text */
+  width: 150px; /* Adjust size of the image */
+  height: 150px; /* Adjust the height to make it square */
+  object-fit: cover; /* Makes sure the image is cropped properly */
+  margin-right: 15px; /* Space between image and description */
 }
 
+/* Description container */
 .description {
   flex: 1; /* Ensures description takes the remaining space */
 }
@@ -267,6 +269,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 
 
 .content-card .description {
@@ -347,3 +350,19 @@ a:hover {
   background-color: #fdf1dc;
   padding: 50px 20px;
 }
+/* Adding the orange line between the sections */
+#details {
+  border-top: 5px solid #f5a623; /* Orange line */
+  padding-top: 20px; /* Adds some space from the top */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Shadow and padding for the content grid */
+#details .tab-content {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Middle section shadow */
+  padding: 20px;
+  background-color: #ffffff; /* Background color for better contrast */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+
