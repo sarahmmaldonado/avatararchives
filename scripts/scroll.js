@@ -7,3 +7,13 @@ function scrollToSection() {
     });
   }
   
+  // Function to smoothly scroll to the More About Avatar section
+  function scrollToMoreAbout() {
+    const moreAboutSection = document.getElementById('more-about');
+    moreAboutSection.scrollIntoView({
+      behavior: 'smooth',  // Enables smooth scrolling
+      block: 'start'       // Scrolls to the top of the section
+    });
+  }
+  
+  
