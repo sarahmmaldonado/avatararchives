@@ -160,7 +160,7 @@ nav a:hover {
 /* MORE ABOUT SECTION */
 #more-about {
   min-height: 100vh;
-  background-color: #f5e2ba; /* Same as the last section */
+  background-color: #fdf1dc; /* Same as the last section */
   display: flex;
   flex-direction: column;
   justify-content: center;
