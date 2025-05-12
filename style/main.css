@@ -330,24 +330,19 @@ a:hover {
 }
 
 /* WORLD OF AVATAR SECTION */
+/* WORLD OF AVATAR SECTION */
 #details {
   min-height: 500px; /* Ensures content area isn't cut off */
   background-color: #fdf1dc;
   padding: 50px 20px;
 }
-/* Adding the orange line between the sections */
-#details {
-  border-top: 2px solid #d6b07e; /* Orange line */
-  padding-top: 20px; /* Adds some space from the top */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-}
 
-/* Shadow and padding for the content grid */
+/* Removing the large box on the last section */
 #details .tab-content {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Middle section shadow */
-  padding: 20px;
-  background-color: #fdf1dc; /* Background color for better contrast */
-  border-radius: 8px; /* Optional: Adds rounded corners */
+  box-shadow: none; /* Remove the shadow */
+  padding: 0; /* Remove extra padding */
+  background-color: transparent; /* Remove background color */
+  border-radius: 0; /* Remove rounded corners */
 }
 
 
