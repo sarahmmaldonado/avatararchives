@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .brand-box h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .name-link {
+    color: #f1c40f;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Section Styles */
+  main {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 8px;
+  }
+  
+  .section h1 {
+    font-size: 2rem;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2a2a2a;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
