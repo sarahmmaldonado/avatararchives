@@ -137,20 +137,24 @@ nav a:hover {
   gap: 30px;
 }
 
-.hero button {
+/* BUTTON (shared style) */
+.hero-button {
   background-color: #d6b07e;
+  color: black; /* Set the font color to black */
   border: none;
-  color: rgb(0, 0, 0);
-  font-size: 1.2rem;
-  padding: 14px 30px;
+  padding: 12px 28px;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
 }
 
-.hero button:hover {
-  transform: scale(1.1);
+.hero-button:hover {
+  transform: scale(1.05);
+  background-color: #c59a66;
+  color: black; /* Ensure the font remains black on hover */
 }
 
 /* MORE ABOUT SECTION */
