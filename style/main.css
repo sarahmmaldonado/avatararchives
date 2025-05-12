@@ -296,7 +296,7 @@ nav a:hover {
 
 .name-link:hover {
   transform: scale(1.1); /* Grow effect */
-  color: #7d5b3e !important; /* Darker brown on hover */
+  color: #d9b08c !important; /* Darker brown on hover */
 }
 
 .name-link:visited {
