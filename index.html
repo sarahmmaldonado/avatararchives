@@ -72,13 +72,27 @@
     <p>Dive into detailed analyses about episodes, characters, and more.</p>
     
     <nav class="tabs">
-      <button class="active">Overview</button>
-      <button>Episodes</button>
-      <button>Characters</button>
-      <button>Theories</button>
-    </nav>
-  </div>
-
+        <button class="tab-button active" data-tab="overview">Overview</button>
+        <button class="tab-button" data-tab="episodes">Episodes</button>
+        <button class="tab-button" data-tab="characters">Characters</button>
+        <button class="tab-button" data-tab="theories">Theories</button>
+      </nav>
+      
+      <div id="tab-contents">
+        <div id="overview" class="tab-content active">
+          <p>This is the overview content.</p>
+        </div>
+        <div id="episodes" class="tab-content">
+          <p>Episodes content goes here.</p>
+        </div>
+        <div id="characters" class="tab-content">
+          <p>Character info here.</p>
+        </div>
+        <div id="theories" class="tab-content">
+          <p>Fan theories and discussions.</p>
+        </div>
+      </div>
+      
   <div class="content-grid">
 
       <!-- Content Card 1 -->
