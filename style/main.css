@@ -278,6 +278,12 @@ nav a:hover {
   border-radius: 10px;
   margin-right: 20px;
 }
+.content-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 
 /* DESCRIPTION */
 .description {
