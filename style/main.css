@@ -222,18 +222,13 @@ nav a:hover {
 /* CONTENT GRID */
 .content-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
   margin-top: 40px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 20px;
+  text-align: left;
 }
-
-
-
-
 /* CONTENT CARD */
 .content-card {
   display: flex;
@@ -367,12 +362,4 @@ nav a:hover {
   background-color: #d6b07e;
   color: #fff;
 }
-.content-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-top: 40px;
-  text-align: left;
-}
+
