@@ -1,365 +1,62 @@
-/* GLOBAL LINK STYLES (EXCLUDE .name-link) */
-a:not(.name-link) {
-  text-decoration: none;
-  color: inherit;
-}
-a:not(.name-link):visited,
-a:not(.name-link):hover,
-a:not(.name-link):active {
-  color: inherit;
-  text-decoration: none;
+/* Center section title and paragraph inside #details */
+#details h2,
+#details p {
+  text-align: center;
 }
 
-/* GENERAL STYLES */
-body {
-  margin: 0;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #fdf1dc;
-  color: #2e2e2e;
-  scroll-behavior: smooth;
-  overflow: auto; /* Ensure content scrolls if it overflows */
-  margin-bottom: 50px; /* Add margin to avoid cutting off bottom */
-}
-
-/* NAV BAR HEADER */
-header {
-  background-color: #fdf1dc;
-  padding: 15px 30px;
+/* Center tab buttons in a container */
+.tab-buttons-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #d6b07e;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
-/* BRAND BOX */
-.brand-box {
-  background-color: #f5e2ba;
-  border-radius: 15px;
-  padding: 10px 20px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 0.95rem;
-}
-
-/* NAV LINKS */
-nav {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-/* DROPDOWN MENU */
-.dropdown {
-  position: relative;
-}
-
-.dropdown > a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #2e2e2e;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 10px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff5d7;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-  border-radius: 10px;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  min-width: 180px;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-  color: #2e2e2e;
-  font-size: 0.9rem;
-}
-
-.dropdown-content a:hover {
-  background-color: #f5e2ba;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-nav a {
-  text-decoration: none;
-  color: #2e2e2e;
-  font-weight: bold;
-  font-size: 0.95rem;
-  padding: 10px;
-  transition: transform 0.3s ease;
-}
-
-nav a:hover {
-  transform: scale(1.1);
-}
-
-/* HERO SECTION */
-.hero {
-  background-color: #e6c49a;
-  padding: 0;
-  height: 100vh;
+/* Content Grid now centers cards */
+.content-grid {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.2); /* Receded and blurred */
-  z-index: 1;
-  position: relative; 
-}
-#more-about {
-  background-color: #f9e7c2; /* Slightly different from #fdf1dc */
-  position: relative;
-  z-index: 0;
-}
-
-
-/* Additional adjustments for the section below hero */
-#home {
-  margin-bottom: 20px; /* Adds space between the hero and next section */
-}
-
-
-/* Shadow below Hero section */
-.hero::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background-color: rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-  border-radius: 50%;
-}
-
-
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #2e2e2e;
-  font-weight: bold;
-}
-
-.hero img {
-  width: 90%;
-  max-width: 800px;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-
-.hero .buttons {
-  display: flex;
   gap: 30px;
-}
-
-.hero button {
-  background-color: #d6b07e;
-  border: none;
-  color: rgb(0, 0, 0);
-  font-size: 1.2rem;
-  padding: 14px 30px;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.hero button:hover {
-  transform: scale(1.1);
-}
-
-/* MORE ABOUT SECTION */
-#more-about {
-  min-height: 100vh;
-  background-color: #fdf1dc;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-#more-about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-/* FAQ */
-.faq {
-  width: 100%;
-  max-width: 800px;
-  text-align: left;
-  margin-bottom: 30px;
-}
-
-.faq-item {
-  border-bottom: 1px solid #ccc;
   padding: 20px 0;
 }
 
-.faq-question {
-  font-size: 1.2rem;
-  cursor: pointer;
-  position: relative;
-}
-
-.faq-answer {
-  display: none;
-  margin-top: 10px;
-  font-size: 1.1rem;
-  color: #444;
-}
-
-.faq-item:hover .faq-answer {
-  display: block;
-}
-
-/* BUTTON (shared style) */
-.hero-button {
-  background-color: #d6b07e;
-  color: white;
-  border: none;
-  padding: 12px 28px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease;
-}
-
-.hero-button:hover {
-  transform: scale(1.05);
-  background-color: #c59a66;
-}
-
-
-/* Container for the grid */
-.content-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
-  gap: 20px; /* Adds spacing between the grid items */
-  margin-bottom: 20px;
-}
-
-/* Card styling */
+/* Wide, flat (fat) cards */
 .content-card {
-  display: flex; /* Flexbox for layout */
-  align-items: center; /* Vertically center the content */
-  border: 1px solid #ddd; /* Optional border */
-  padding: 15px;
-  background-color: #f9f9f9;
-}
-
-/* Styling for images inside content cards */
-.content-card img {
-  width: 150px; /* Adjust size of the image */
-  height: 150px; /* Adjust the height to make it square */
-  object-fit: cover; /* Makes sure the image is cropped properly */
-  margin-right: 15px; /* Space between image and description */
-}
-
-/* Description container */
-.description {
-  flex: 1; /* Ensures description takes the remaining space */
-}
-
-.description h3 {
-  margin: 0 0 10px 0;
-}
-
-.description p {
-  margin: 0;
-}
-
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* NAME LINK (Sarah Maldonado) */
-.name-link {
-  text-decoration: none;
-  color: #9e7d53;
-  font-weight: bold;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.name-link:hover {
-  transform: scale(1.1);
-  color: #d9b08c;
-}
-
-.name-link:visited {
-  color: #9e7d53;
-}
-
-/* TABS STYLES */
-.tab-content {
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
-}
-
-.tab-button {
-  background-color: #d6b07e;
-  border: none;
-  padding: 12px 24px;
-  margin: 0 10px 30px;
-  border-radius: 6px;
-  font-weight: bold;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.tab-button.active,
-.tab-button:hover {
-  background-color: #c59a66;
-}
-
-/* WORLD OF AVATAR SECTION */
-#details {
-  min-height: 500px; /* Ensures content area isn't cut off */
-  background-color: #fdf1dc;
-  padding: 50px 20px;
-}
-/* Adding the orange line between the sections */
-#details {
-  border-top: 2px solid #d6b07e; /* Orange line */
-  padding-top: 20px; /* Adds some space from the top */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-}
-
-/* Shadow and padding for the content grid */
-#details .tab-content {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Middle section shadow */
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
   padding: 20px;
-  background-color: #fdf1dc; /* Background color for better contrast */
-  border-radius: 8px; /* Optional: Adds rounded corners */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Updated card image */
+.content-card img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .content-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .content-card img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
 
