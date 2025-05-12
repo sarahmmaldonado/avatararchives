@@ -1,18 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const tabButtons = document.querySelectorAll('.tab-button');
-  const tabContents = document.querySelectorAll('.tab-content');
+document.addEventListener("DOMContentLoaded", () => {
+  const tabButtons = document.querySelectorAll(".tab-button");
+  const tabContents = document.querySelectorAll(".tab-content");
 
   tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      tabButtons.forEach(btn => btn.classList.remove("active"));
+      // Add active class to clicked button
+      button.classList.add("active");
 
-      button.classList.add('active');
-      const tabId = button.getAttribute('data-tab');
-      const targetTab = document.getElementById(tabId);
-      if (targetTab) {
-        targetTab.classList.add('active');
-      }
+      // Hide all tab contents
+      tabContents.forEach(content => content.classList.remove("active"));
+      // Show the clicked tab content
+      const activeTab = document.getElementById(button.getAttribute("data-tab"));
+      activeTab.classList.add("active");
     });
   });
 });
