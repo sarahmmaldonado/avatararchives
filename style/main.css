@@ -250,7 +250,9 @@ nav a:hover {
 }
 
 .content-card {
-  display: block;
+  display: flex; /* Make it horizontal */
+  flex-direction: row; /* Image left, text right */
+  align-items: stretch;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -258,6 +260,7 @@ nav a:hover {
   color: inherit;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
+  height: 180px; /* Fixed height for consistency */
 }
 
 .content-card:hover {
@@ -265,14 +268,19 @@ nav a:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+
 .content-card img {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 180px; /* Fixed width for image */
+  height: 100%;  /* Fill the height of the card */
+  object-fit: cover;
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
 .description {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -305,16 +313,18 @@ nav a:hover {
   }
 
   .content-card {
-    flex-direction: column;
+    flex-direction: column; /* Stack vertically on mobile */
     height: auto;
-    text-align: center;
   }
 
   .content-card img {
-    margin: 0 0 15px 0;
+    width: 100%;
+    height: auto;
   }
 
   .description {
     text-align: center;
   }
 }
+
+
