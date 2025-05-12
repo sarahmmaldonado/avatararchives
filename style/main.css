@@ -225,10 +225,10 @@ nav a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   max-width: 800px;
-  margin: 40px auto; /* Ensure grid is centered */
+  margin: 0 auto;
+  margin-top: 40px;
   text-align: left;
 }
-
 /* CONTENT CARD */
 .content-card {
   display: flex;
@@ -244,6 +244,7 @@ nav a:hover {
 .content-card:hover {
   transform: scale(1.05);
 }
+
 
 .content-card img {
   width: 40%;
@@ -280,7 +281,6 @@ nav a:hover {
     padding-left: 0;
   }
 }
-
 .content-card h3 {
   font-size: 1.4rem;
   margin-bottom: 10px;
@@ -337,13 +337,11 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-/* TABS SECTION */
 .tabs {
   display: flex;
   gap: 15px;
   margin-bottom: 30px;
   flex-wrap: wrap;
-  justify-content: left; /* Align tabs to the left */
 }
 
 .tabs button {
@@ -364,3 +362,4 @@ nav a:hover {
   background-color: #d6b07e;
   color: #fff;
 }
+
