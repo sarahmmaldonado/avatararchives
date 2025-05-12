@@ -242,54 +242,38 @@ nav a:hover {
   display: block;
 }
 
-/* CONTENT GRID - 2x2 layout */
 .content-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 30px; /* spacing between cards */
-  justify-items: center; /* center cards in each column */
-  padding: 20px 0;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
-/* CARD STYLE */
 .content-card {
-  display: flex;
-  align-items: center;
-  max-width: 90%;
-  width: 100%;
-  height: 220px;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.content-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
-
-
-/* IMAGE INSIDE CARD */
-.content-card img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-.content-card-link {
+  display: block;
   text-decoration: none;
   color: inherit;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #fff;
+}
+
+.content-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.content-card img {
+  width: 100%;
+  height: auto;
   display: block;
 }
 
-
-/* DESCRIPTION */
 .description {
-  flex: 1;
-  text-align: left;
+  padding: 1rem;
 }
+
 .description h3 {
   margin: 0 0 10px;
 }
