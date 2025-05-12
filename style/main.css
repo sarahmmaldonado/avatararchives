@@ -266,6 +266,28 @@ nav a:hover {
   flex: 1;
 }
 
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr; /* Stack cards */
+  }
+
+  .content-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .content-card img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+
+  .content-card .description {
+    padding-left: 0;
+  }
+}
+
+
 
 .content-card h3 {
   font-size: 1.4rem;
